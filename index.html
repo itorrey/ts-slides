@@ -113,38 +113,6 @@
 						</aside>
 					</section>
 					<section>
-<<<<<<< HEAD
-						<h5>Option 1</h5>
-						<pre>
-							<code>
-interface ButtonProperties {
-	iconType?: string;
-	iconAltText?: string;
-}
-							</code>
-						</pre>
-						<ul>
-							<li class="fragment">Easy to create an incorrect <code>iconType</code></li>
-							<li class="fragment">Easy to leave off alt text</li>
-						</ul>
-					</section>
-					<section>
-						<h5>Option 2</h5>
-						<pre>
-							<code>
-interface ButtonProperties {
-	icon?: {
-		type: 'plus' | 'arrow' | 'search';
-		altText: string;
-	};
-}
-							</code>
-						</pre>
-						<ul>
-							<li class="fragment">Only supported icon types are allowed</li>
-							<li class="fragment">No alt text as an error forces the use of at least an empty string</li>
-						</ul>
-=======
 						<h5>Take 1:</h5>
 						<pre><code data-trim class="typescript">
 						interface ButtonProperties {
@@ -228,7 +196,6 @@ interface ButtonProperties {
 								<li>Now a screen reader will announce "search" when the button is focused</li>
 							</ul>
 						</aside>
->>>>>>> a94f714178c9bad43900acee62df79853b93e07b
 					</section>
 				</section>
 				<section>
